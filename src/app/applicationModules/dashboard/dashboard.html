@@ -1,0 +1,52 @@
+<section class="o-dashboard--loader" ng-if="$ctrl.isLoading">
+  <h3>{{$ctrl.loadingMessage}}</h3>
+</section>
+<section class="o-grid" ng-class="{true: 'is-loading'}[$ctrl.isLoading]">
+
+  <section class="o-grid--item">
+
+    <section class="c-widget">
+      <header class="c-widget--heading">Pressure [hPa]</header>
+      <section class="c-widget--content">
+        <range-select range="$ctrl.pressure.range" metric="$ctrl.pressure.metric" ng-model="$ctrl.pressure.value" ng-change="$ctrl.updateCharts($ctrl.pressure.value)"></range-select>
+        </datalist>
+      </section>
+    </section>
+
+  </section>
+
+
+  <section class="o-grid--item">
+
+    <section class="c-widget">
+      <header class="c-widget--heading">Chance of rain %</header>
+      <section class="c-widget--content" ng-if="$ctrl.chanceByDay">
+        <line-chart dataset="$ctrl.chanceByDay"></line-chart>
+      </section>
+    </section>
+
+  </section>
+
+  <section class="o-grid--item">
+
+    <section class="c-widget">
+      <header class="c-widget--heading">Temperature [°C]</header>
+      <section class="c-widget--content">
+        <range-select range="$ctrl.temperature.range" metric="$ctrl.temperature.metric" ng-model="$ctrl.temperature.value" ng-change="$ctrl.updateCharts($ctrl.pressure.value)"></range-select>
+      </section>
+    </section>
+
+  </section>
+
+  <section class="o-grid--item">
+
+    <section class="c-widget">
+      <header class="c-widget--heading">Amount of rain </header>
+      <section class="c-widget--content" ng-if="$ctrl.amountByDay">
+        <bar-chart dataset="$ctrl.amountByDay"></bar-chart>
+      </section>
+    </section>
+
+  </section>
+
+</section>

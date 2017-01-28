@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app="application" ng-strict-di>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="prefetch" href="index.html">
+    <title>Weather service dashboard</title>
+    <meta name="description" content="Weather service dashboard">
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="application-name" content="Weather service dashboard"/>
+
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <main id="o-root">
+      <header class="o-application--heading"><h1 class="c-application--title">Weather service dashboard</h1></header>
+      <section class="o-application--container" ui-view="container"></section>
+    </main>
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp/serve,.tmp/partials}) scripts/app.js -->
+    <!-- inject:js -->
+    <!-- endinject -->
+
+    <!-- inject:partials -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+  </body>
+</html>

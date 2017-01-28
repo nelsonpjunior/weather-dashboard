@@ -1,0 +1,9 @@
+<section class="c-range">
+  <div class="c-range--data">
+    <span class="c-range--value">{{$ctrl.ngModel}}</span>
+    <span class="c-range--metric">{{$ctrl.metric}}</span>
+  </div>
+  <section class="c-range--input">
+    <input type="range" min="{{::$ctrl.range.min}}" max="{{::$ctrl.range.max}}" ng-model="$ctrl.ngModel" ng-model-options="{debounce: 200}" ng-change="$ctrl.ngChange()">
+  </section>
+</section>

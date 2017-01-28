@@ -1,0 +1,23 @@
+{
+  "name": "application",
+  "description": "Weather service dashboard",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular-sanitize": "~1.5.3",
+    "angular-aria": "~1.5.3",
+    "angular-ui-router": "~0.2.15",
+    "angular": "~1.5.3",
+    "normalize-css": "normalize.css#^5.0.0",
+    "angular-nvd3": "^1.0.9"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,77 @@
+$thumb-border: #000;
+$thumb-bg:     #222;
+$track-bg:     linear-gradient(to right, #3498db, #e74c3c);
+
+
+.c-range {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-range--data { padding: 50px 0 20px; }
+
+.c-range--value {
+  font-size: 64px;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.c-range--input {
+  width: 100%;
+  padding: 15px;
+}
+
+.c-range--input > input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+.c-range--input > input[type="range"]:focus {
+  outline: none;
+}
+
+.c-range--input > input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background-image: $track-bg;;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .15);
+  border-radius: 2px;
+}
+
+.c-range--input > input[type="range"]::-webkit-slider-thumb {
+  border: 1px solid $thumb-border;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: $thumb-bg;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .35);
+}
+
+
+.c-range--input > input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background-image: $track-bg;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .15);
+  border-radius: 2px;
+}
+
+.c-range--input > input[type="range"]::-moz-range-thumb {
+  border: 1px solid $thumb-border;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: $thumb-bg;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .35);
+}
+
+// TODO: IE tracker implementation
